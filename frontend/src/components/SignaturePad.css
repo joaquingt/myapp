@@ -1,0 +1,30 @@
+.signature-pad-container {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signature-canvas {
+  display: block;
+  cursor: crosshair;
+  touch-action: none;
+  border-radius: 6px;
+}
+
+.signature-canvas:active {
+  cursor: crosshair;
+}
+
+/* Tablet optimization */
+@media (min-width: 768px) {
+  .signature-pad-container {
+    border: 3px solid #ddd;
+  }
+  
+  .signature-canvas {
+    min-width: 500px;
+    min-height: 250px;
+  }
+}
