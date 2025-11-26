@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Field Technician App - Manage jobs, capture work details, photos, and customer signatures"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Field Tech App</title>
+    <style>
+      /* Global tablet-friendly styles */
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      /* Tablet optimization */
+      @media (min-width: 768px) {
+        body {
+          font-size: 18px;
+        }
+      }
+      
+      /* Prevent zoom on inputs in iOS */
+      input, select, textarea {
+        font-size: 16px;
+      }
+      
+      /* Large, finger-friendly touch targets */
+      button, .btn, input[type="submit"] {
+        min-height: 44px;
+        min-width: 44px;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        touch-action: manipulation;
+      }
+      
+      @media (min-width: 768px) {
+        button, .btn, input[type="submit"] {
+          min-height: 50px;
+          font-size: 18px;
+          padding: 14px 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
